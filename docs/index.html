@@ -1,0 +1,76 @@
+{{ partial "header" . }}
+
+<section class="container-about colors-c" id="about">
+    <h2 class="heading">Sobre mí</h2>
+    <p>
+        Soy un apasionado analista GIS con una reciente formación como programador, además de dedicarme a la
+        investigación y
+        divulgación de publicaciones científicas relacionadas con el análisis de datos y los Sistemas de Información
+        Geográfica
+        (GIS). <br><br>
+        Persigo avanzar constantemente en el campo de los Sistemas de Información Geográfica, la programación y las
+        nuevas
+        tecnologías, a través de proyectos de implementación de Sistemas de Información Geográfica en entornos de
+        desarrollo.
+        Estoy en busca de una empresa estable que me brinde la oportunidad de crecer tanto a nivel personal como
+        profesional,
+        a través de experiencias enriquecedoras, preparación constante y la colaboración en proyectos junto a individuos
+        y organizaciones que aporten un valor significativo a la sociedad. <br><br>
+        Tengo una profunda vocación por la investigación y un compromiso constante con el aprendizaje continuo, siempre
+        en
+        busca de nuevos retos y metas por superar.
+    </p>
+</section>
+
+<section class=" colors-c" id="experience">
+    <div class="container-experience">
+        <h2 class="heading">Experiencia</h2>
+        <div class="timeline-experience">
+            <div class="timeline__line timeline__start"></div>
+            <div class="timeline__line timeline__base"></div>
+            <div class="timeline__line timeline__end"></div>
+            <div class="timeline__elements">
+                {{ partial "experience" . }}
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="colors-c" id="education">
+    <div class="container-education">
+        <h2 class="heading">Educación</h2>
+        <div class="timeline">
+            {{ partial "education" . }}
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="exp-skills">
+    <div class="view x40-widget widget   text-bg" id="layers-widget-skrollex-section-40"
+        data-text-effect-selector="h1,h2,h3,h4" data-text-effect="effect-a-animated">
+        <div id="CONOCIMIENTOS" class="colors-c">
+            <div>
+                <h2 class="heading">Habilidades</h2>
+            </div>
+            <div class="section-cols layout-boxed">
+                <div class="pure-g">
+                    {{ partial "skills" . }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="colors-c" id="contact">
+    <div class="contact-section">
+        <h2 class="heading">Contacto</h2>
+        <div id="formulario" class="form">
+            <input type="text" id="em-asunto" placeholder="Asunto">
+            <textarea id="em-texto" placeholder="Mensaje"></textarea>
+            <button class="contact-btn" onclick="mailto()">Contactar</button>
+        </div>
+    </div>
+</section>
+
+{{ partial "footer" . }}
